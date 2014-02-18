@@ -1,0 +1,109 @@
+body,html{
+    margin:0px;
+    height: 100%;
+    background-color: #050505;
+}
+p{
+    font-size:1.5em;
+}
+div{
+    padding:0px;
+}
+span{
+    padding:1em;
+    height:100%;
+    display: block;
+    font-weight: bold;
+}
+
+@keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+@-webkit-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+@-ms-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+@-moz-keyframes animatedBackground {
+from { background-position: 0 0; }
+to { background-position: 100% 0; }
+}
+
+#bg{
+    background-color:#cefaff;
+    width: 320px;
+    height: 480px;
+    margin: 0px;
+    background-image: url(clouds.png);
+    background-position: 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 20s linear infinite;
+    -ms-animation: animatedBackground 20s linear infinite;
+    -moz-animation: animatedBackground 20s linear infinite;
+    -webkit-animation: animatedBackground 20s linear infinite;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+#fg{
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+#wert{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left:250px;
+    top:150px;
+}
+.wall{
+    position: absolute;
+    top:0px;
+}
+.upwall{
+    background: url("wall.png") top left repeat-y;
+    background-color:#07c207;
+    margin-bottom: 20px;
+    width:100%;
+    overflow: hidden;
+    border-width: 3px;
+    border-style:solid;
+    border-top-style:none;
+}
+.downwall{
+    background: url("wall.png") top left repeat-y;
+    background-color:#07c207;
+    width:100%;
+    overflow: hidden;
+    border-width: 3px;
+    border-style:solid;
+}
+#score{
+    position:absolute;
+    color:black;
+    top:10px;
+    left:20px;
+    font-size:3em;
+}
+
+.rotup{
+    -moz-transform: rotate(-10deg) ;
+    -webkit-transform:rotate(-10deg);
+    -o-transform: rotate(-10deg) ;
+    transform: rotate(-10deg) ;
+}
+.rotdown{
+    -moz-transform: rotate(10deg) ;
+    -webkit-transform:rotate(10deg);
+    -o-transform: rotate(10deg) ;
+    transform: rotate(10deg) ;
+}
+.rotnone{
+}
