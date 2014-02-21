@@ -2,6 +2,7 @@ body,html{
     margin:0px;
     height: 100%;
     background-color: #050505;
+    min-height:490px;
 }
 p{
     font-size:1.5em;
